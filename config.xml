@@ -1,7 +1,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.max.app.astellas2016" version="1.0.0">
   <name>Astellas</name>
   <description>Astellas app</description>
-  <author href="http://maxexperience.com.br" email="alan@maxexperience.com.br">PhoneGap Team</author>
+  <author href="http://maxexperience.com.br" email="alan@maxexperience.com.br">Astellas</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>

@@ -14,7 +14,7 @@ var arrTabelas = new Array('participantes');//, 'salas', 'sessoes', 'horarios', 
 //var ExternalURL = 'http://'+ip+'/googledrive/Server/Projetos/MaxExperience/Desenvolvimento/Clientes/Abrafarma/Site/';
 
 //var ExternalURL = 'http://localhost/googledrive/Projetos/MaxExperience/Desenvolvimento/Clientes/Astellas/08_App_CBOT_2014/CBOT2014/adm/';
-var ExternalURL = 'http://www.avmeventos.com.br/app/cbot2014/adm/';
+var ExternalURL = 'http://www.avmeventos.com.br/app/astellas/adm/';
 
 var antsDb = new AntsDB();    
 

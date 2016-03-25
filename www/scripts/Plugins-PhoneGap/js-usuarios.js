@@ -153,13 +153,13 @@ var usuarios = {
                {
                    $('#content').show('slow');
                    $('#loading').hide('slow');
-                   alert('E-mail não cadastrado!');
+                   alert('CPF não cadastrado!');
                }
             }, 'json');
         }
         else
         {
-            alert('Por favor, preencha seu e-mail.')
+            alert('Por favor, preencha seu com seu CPF.')
         }
     },
     
