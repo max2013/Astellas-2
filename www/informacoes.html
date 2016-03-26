@@ -148,6 +148,11 @@
                                                             '<td colspan="2"><span id="divOrigem">'+employee.aereoIdaOrigem+'</span></td>'+
                                                         '</tr>'+
 
+                                                         '<tr>'+
+                                                            '<td class="table-sub-title" ><strong>Aeroporto :</strong></td>'+
+                                                            '<td colspan="2"><span id="divOrigem">'+employee.aereoIdaAeroporto+'</span></td>'+
+                                                        '</tr>'+
+
                                                         '<tr>'+
                                                             '<td class="table-sub-title" > <strong>Destino:</strong></td>'+
                                                             '<td colspan="2"><span id="divDestino">'+employee.aereoIdaDestino+'</span></td>'+
@@ -173,20 +178,38 @@
                                                             '<td colspan="2"><span id="divSaida">'+employee.aereoIdaSaida+'</span></td>'+
                                                         '</tr>'+
 
+                                                            '<tr>'+
+                                                            '<td class="table-sub-title" > <strong>Chegada Conexão:</strong></td>'+
+                                                            '<td colspan="2"><span id="divChegada">'+employee.aereoIdaChegadaConexao+'</span></td>'+
+                                                        '</tr>'+
+
+                                                           '<tr>'+
+                                                            '<td class="table-sub-title" > <strong>Voo Conexão:</strong></td>'+
+                                                            '<td colspan="2"><span id="divChegada">'+employee.aereoIdaVooConexao+'</span></td>'+
+                                                        '</tr>'+
+
+                                                               '<tr>'+
+                                                            '<td class="table-sub-title" > <strong>Saída Conexão:</strong></td>'+
+                                                            '<td colspan="2"><span id="divChegada">'+employee.aereoIdaSaidaConexao+'</span></td>'+
+                                                        '</tr>'+
+
+                                                           '<tr>'+
+                                                            '<td class="table-sub-title" > <strong>Cidade Conexão:</strong></td>'+
+                                                            '<td colspan="2"><span id="divChegada">'+employee.aereoIdaCidadeConexao+'</span></td>'+
+                                                        '</tr>'+
+
                                                         '<tr>'+
-                                                            '<td class="table-sub-title" > <strong>Chegada:</strong></td>'+
+                                                            '<td class="table-sub-title" > <strong>Horario de Chegada no Aeroporto de Porto Seguro :</strong></td>'+
                                                             '<td colspan="2"><span id="divChegada">'+employee.aereoIdaChegada+'</span></td>'+
                                                         '</tr>'+
 
-                                                        '<tr>'+
-                                                            '<td class="table-sub-title" > <strong>Localização:</strong></td>'+
-                                                            '<td colspan="2"><span id="divLocalizacao">'+employee.aereoIdaLocalizacao+'</span></td>'+
-                                                        '</tr>'+
+                                                    
 
                                                         '<tr>'+
-                                                            '<td class="table-sub-title" > <strong>Eticket:</strong></td>'+
-                                                            '<td colspan="2"><span id="divEticket">'+employee.aereoIdaETicket+'</span></td>'+
+                                                            '<td class="table-sub-title" > <strong>Localizador:</strong></td>'+
+                                                            '<td colspan="2"><span id="divLocalizacao">'+employee.aereoIdaLocalizacao+'</span></td>'+
                                                         '</tr>'+
+ 
 
                                                     '</table>'+
                                             '</div>'+
@@ -204,6 +227,11 @@
                                                         '<tr>'+
                                                             '<td class="table-sub-title" > <strong>Origem:</strong></td>'+
                                                             '<td colspan="2"><span id="divOrigem">'+employee.aereoVoltaOrigem+'</span></td>'+
+                                                        '</tr>'+
+
+                                                          '<tr>'+
+                                                            '<td class="table-sub-title" > <strong>Aeroporto Chegada:</strong></td>'+
+                                                            '<td colspan="2"><span id="divOrigem">'+employee.aereoVoltaAeroporto+'</span></td>'+
                                                         '</tr>'+
 
                                                         '<tr>'+
@@ -231,20 +259,38 @@
                                                             '<td colspan="2"><span id="divSaida">'+employee.aereoVoltaSaida+'</span></td>'+
                                                         '</tr>'+
 
+
+                                                        '<tr>'+
+                                                            '<td class="table-sub-title" > <strong>Chegada Conexão:</strong></td>'+
+                                                            '<td colspan="2"><span id="divSaida">'+employee.aereoVoltaChegadaConexao+'</span></td>'+
+                                                        '</tr>'+
+
+                                                             '<tr>'+
+                                                            '<td class="table-sub-title" > <strong>Cidade Conexão:</strong></td>'+
+                                                            '<td colspan="2"><span id="divSaida">'+employee.aereoVoltaCidadeConexao+'</span></td>'+
+                                                        '</tr>'+
+
+                                                               '<tr>'+
+                                                            '<td class="table-sub-title" > <strong>Voo Conexão:</strong></td>'+
+                                                            '<td colspan="2"><span id="divSaida">'+employee.aereoVoltaVooConexao+'</span></td>'+
+                                                        '</tr>'+
+
+                                                                    '<tr>'+
+                                                            '<td class="table-sub-title" > <strong>Saída Conexão:</strong></td>'+
+                                                            '<td colspan="2"><span id="divSaida">'+employee.aereoVoltaSaidaConexao+'</span></td>'+
+                                                        '</tr>'+
+
                                                         '<tr>'+
                                                             '<td class="table-sub-title" > <strong>Chegada:</strong></td>'+
                                                             '<td colspan="2"><span id="divChegada">'+employee.aereoVoltaChegada+'</span></td>'+
                                                         '</tr>'+
 
                                                         '<tr>'+
-                                                            '<td class="table-sub-title" > <strong>Localização:</strong></td>'+
+                                                            '<td class="table-sub-title" > <strong>Localizador:</strong></td>'+
                                                             '<td colspan="2"><span id="divLocalizacao">'+employee.aereoVoltaLocalizacao+'</span></td>'+
                                                         '</tr>'+
 
-                                                        '<tr>'+
-                                                            '<td class="table-sub-title" > <strong>Eticket:</strong></td>'+
-                                                            '<td colspan="2"><span id="divEticket">'+employee.aereoVoltaETicket+'</span></td>'+
-                                                        '</tr>'+
+                                                        
 
                                                     '</table>'+
                                             '</div>'+
@@ -402,11 +448,29 @@
                     <div class="toggle-content">
                         
                             <table cellspacing='0' class="table"> 
+                                
+                              
+
                                 <tr>
                                     <th colspan="3">
                                         <img id="imgHotel" src="images/hoteis/hotel.jpg" width="100%"/>
                                         <div id="idHotelEndereco"></div>
                                     </th>
+                                </tr>
+                                       <tr>
+                                    <td class="table-sub-title" colspan="3"> 
+                                        <p>
+                                            <strong>Check in: 30/03/2016</strong><br>
+                                            <strong>Horário</strong> - 15:00 <br>
+                                            
+                                        </p>
+                                        <p>
+                                            <strong>Check out: 05/04/2016</strong><br>
+                                            <strong>Horário</strong> - 14:00 <br>
+                                            
+                                        </p>
+                                      
+                                    </td>
                                 </tr>
                                 
                                 <tr>
@@ -464,24 +528,7 @@
                 </div>
             </div>
 
-                  <div class="container">
-                <div class="toggle-1">
-                    <a href="#" class="deploy-toggle-1" id="idHotelNome">Proteja-se</a>
-                    <div class="toggle-content">
-                        
-                            <table cellspacing='0' class="table"> 
-                                 
-                               <tr>
-                                    <th colspan="3">
-                                        <img id="imgHotel" src="images/app_aedes.jpg" width="100%"/>
-                                       
-                                    </th>
-                                </tr>
-
-                            </table>
-                    </div>
-                </div>
-            </div>
+         
             
             
             <div class="decoration"></div>

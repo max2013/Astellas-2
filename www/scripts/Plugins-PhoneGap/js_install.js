@@ -11,9 +11,7 @@ var dbError = 0;
 var dbCount = 0;
 var arrTabelas = new Array('participantes');//, 'salas', 'sessoes', 'horarios', 'empresas'
             //
-//var ExternalURL = 'http://'+ip+'/googledrive/Server/Projetos/MaxExperience/Desenvolvimento/Clientes/Abrafarma/Site/';
-
-//var ExternalURL = 'http://localhost/googledrive/Projetos/MaxExperience/Desenvolvimento/Clientes/Astellas/08_App_CBOT_2014/CBOT2014/adm/';
+ 
 var ExternalURL = 'http://www.avmeventos.com.br/app/astellas/adm/';
 
 var antsDb = new AntsDB();    
@@ -25,7 +23,7 @@ function AntsDB(){
     //HandleConnect
     this.handleConnect = function() { 
         
-        db = openDatabase('Astellas2016', '1.5', 'ralves_sql', 50 * 1024 * 1024); 
+        db = openDatabase('Astellas2016', '1.5', '_sql', 50 * 1024 * 1024); 
     },
     
     //HandleCreateDb
@@ -61,7 +59,8 @@ function AntsDB(){
 		"aereoId INT(11), " +//INTEGER PRIMARY KEY AUTOINCREMENT
 		"aereoParticipantesId INT(11), " +
 		"aereoCidade VARCHAR(100), " +
-		"aereoUf VARCHAR(100), " +
+        "aereoUf VARCHAR(100), " +
+		"aereoIdaAeroporto VARCHAR(100), " +
 		"aereoEmitido VARCHAR(100), " +
 		"aereoIdaOrigem VARCHAR(100), " +
 		"aereoIdaDestino VARCHAR(100), " +
@@ -69,15 +68,24 @@ function AntsDB(){
 		"aereoIdaCiaAerea VARCHAR(100), " +
 		"aereoIdaVoo VARCHAR(100), " +
 		"aereoIdaSaida VARCHAR(100), " +
-		"aereoIdaChegada VARCHAR(100), " +
+        "aereoIdaChegadaConexao VARCHAR(100), " +
+        "aereoIdaCidadeConexao VARCHAR(100), " +
+        "aereoIdaVooConexao VARCHAR(100), " +
+        "aereoIdaSaidaConexao VARCHAR(100), " +
+        "aereoIdaChegada VARCHAR(100), " +
 		"aereoIdaLocalizacao VARCHAR(100), " +
 		"aereoIdaETicket VARCHAR(100), " +
-		"aereoVoltaOrigem VARCHAR(100), " +
+        "aereoVoltaOrigem VARCHAR(100), " +
+		"aereoVoltaAeroporto VARCHAR(100), " +
 		"aereoVoltaDestino VARCHAR(100), " +
 		"aereoVoltaData VARCHAR(100), " +
 		"aereoVoltaCiaAerea VARCHAR(100), " +
 		"aereoVoltaVoo VARCHAR(100), " +
-		"aereoVoltaSaida VARCHAR(100), " +
+        "aereoVoltaSaida VARCHAR(100), " +
+        "aereoVoltaChegadaConexao VARCHAR(100), " +
+        "aereoVoltaCidadeConexao VARCHAR(100), " +
+        "aereoVoltaVooConexao VARCHAR(100), " +
+		"aereoVoltaSaidaConexao VARCHAR(100), " +
 		"aereoVoltaChegada VARCHAR(100), " +
 		"aereoVoltaLocalizacao VARCHAR(100), " +
 		"aereoVoltaETicket VARCHAR(100), " +
