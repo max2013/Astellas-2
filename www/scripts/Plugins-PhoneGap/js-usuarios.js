@@ -153,7 +153,7 @@ var usuarios = {
                {
                    $('#content').show('slow');
                    $('#loading').hide('slow');
-                   alert('CPF não cadastrado!');
+                   alert('CPF ou  Nome não cadastrado!');
                }
             }, 'json');
         }
